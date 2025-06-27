@@ -118,7 +118,6 @@
 		F47CB918295DD7AD00A47BA8 /* RepoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoView.swift; sourceTree = "<group>"; };
 		F47CB91A295DD7AF00A47BA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F47CB91D295DD7AF00A47BA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F47CB91F295DD7AF00A47BA8 /* GitBuddy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GitBuddy.entitlements; sourceTree = "<group>"; };
 		F490DCC929939D760058F5D8 /* GeneratedMocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneratedMocks.swift; sourceTree = "<group>"; };
 		F490DCCB2993A3B30058F5D8 /* FileServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileServiceTests.swift; sourceTree = "<group>"; };
 		F490DCCE2993A4F40058F5D8 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
@@ -147,7 +146,6 @@
 		F4CB2C8A299A7F6000296BF7 /* Pasteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pasteboard.swift; sourceTree = "<group>"; };
 		F4CB2C95299BA70E00296BF7 /* LoadingIndicatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorService.swift; sourceTree = "<group>"; };
 		F4CB2C97299BA7CA00296BF7 /* LoadingIndicatorServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicatorServiceTests.swift; sourceTree = "<group>"; };
-		F4CB2CA2299D175A00296BF7 /* GitCaller */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = GitCaller; path = ../GitCaller; sourceTree = "<group>"; };
 		F4D6E500296B30C900C302C1 /* BranchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchListView.swift; sourceTree = "<group>"; };
 		F4D6E502296B30D700C302C1 /* BranchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BranchListViewModel.swift; sourceTree = "<group>"; };
 		F4D6E505296B59C600C302C1 /* KeyValueRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueRepository.swift; sourceTree = "<group>"; };
@@ -302,7 +300,6 @@
 		F47CB90A295DD7AD00A47BA8 = {
 			isa = PBXGroup;
 			children = (
-				F4CB2CA2299D175A00296BF7 /* GitCaller */,
 				F46DC532297CA710001E357D /* README.md */,
 				F47CB915295DD7AD00A47BA8 /* Jagu */,
 				F4445A97295E58790053D9B0 /* JaguTests */,
@@ -331,7 +328,6 @@
 				F4445AA1295E5C400053D9B0 /* Views */,
 				F4445A8D295E526E0053D9B0 /* Extensions */,
 				F47CB91A295DD7AF00A47BA8 /* Assets.xcassets */,
-				F47CB91F295DD7AF00A47BA8 /* GitBuddy.entitlements */,
 				F47CB91C295DD7AF00A47BA8 /* Preview Content */,
 				F4445A67295DE5A90053D9B0 /* AppDelegate.swift */,
 				F4445A6D295DEB580053D9B0 /* Localizable.strings */,
@@ -971,8 +967,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/klein-artur/GitCaller";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				branch = develop;
+				kind = branch;
 			};
 		};
 		F490DCC3299399D20058F5D8 /* XCRemoteSwiftPackageReference "Cuckoo" */ = {

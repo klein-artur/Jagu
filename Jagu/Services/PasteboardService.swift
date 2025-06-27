@@ -9,7 +9,7 @@ import Foundation
 import SwiftDose
 
 class PasteboardService {
-    @Dose(\.pasteboard) var pasteboard
+    @Dose(of: \.pasteboard) var pasteboard
     
     func copy(string: String) -> Bool {
         _ = pasteboard.declareTypes([.string], owner: nil)

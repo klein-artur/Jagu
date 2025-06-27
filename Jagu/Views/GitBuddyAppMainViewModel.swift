@@ -16,7 +16,7 @@ class JaguAppMainViewModel: BaseRepositoryViewModel {
     
     @Published var status: StatusResult?
     
-    @Dose(\.favoriteRepoService) var favoritesService: FavoriteRepoService
+    @Dose(of: \.favoriteRepoService) var favoritesService: FavoriteRepoService
     
     private var innerUpdate = false
     @Published var newBranchName: String = "" {

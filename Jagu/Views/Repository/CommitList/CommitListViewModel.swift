@@ -12,7 +12,7 @@ import SwiftDose
 @MainActor
 class CommitListViewModel: BaseRepositoryViewModel {
     
-    @Dose(\.pasteboardService) var pasteboardService
+    @Dose(of: \.pasteboardService) var pasteboardService
     
     var branch: Branch?
     @Published var commitList: CommitInfoList? {

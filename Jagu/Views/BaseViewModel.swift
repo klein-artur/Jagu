@@ -18,7 +18,7 @@ class BaseViewModel: ObservableObject {
     @Published var alertItem: AlertItem? = nil
     @Published var isLoading: Bool = false
     
-    @Dose(\.loadingIndicatorService) var loadingIndicatorService
+    @Dose(of: \.loadingIndicatorService) var loadingIndicatorService
     
     var lifetimeCancellables: [AnyCancellable] = []
     
@@ -79,7 +79,7 @@ class BaseViewModel: ObservableObject {
 
 class BaseRepositoryViewModel: BaseViewModel {
     
-    @Dose(\.repository) var repository: any Repository
+    @Dose(of: \.repository) var repository: any Repository
     
     @Published var gitError: String?
     

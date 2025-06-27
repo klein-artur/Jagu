@@ -12,7 +12,7 @@ class LocalFavoriteRepoRepository: FavoriteRepoRepository, UserDefaultsRepo {
     
     static let defaultsKey: String = "LOCAL_FAVORITE_REPOSITORIES_KEY"
     
-    @Dose(\.userDefaults) var userDefaults
+    @Dose(of: \.userDefaults) var userDefaults
     
     func setAsFavorite(path: String) {
         var currentList = Set(getFavorites())

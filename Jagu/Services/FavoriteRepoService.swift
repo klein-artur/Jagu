@@ -9,7 +9,7 @@ import Foundation
 import SwiftDose
 
 class FavoriteRepoService {
-    @Dose(\.favoriteRepoRepository) var repoRepository: FavoriteRepoRepository
+    @Dose(of: \.favoriteRepoRepository) var repoRepository: FavoriteRepoRepository
     
     var favorites: [RepoFavorite] {
         repoRepository.getFavorites()
