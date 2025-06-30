@@ -77,6 +77,7 @@
 		F4E76A862993E57900C16ADC /* RepoFavorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E76A852993E57900C16ADC /* RepoFavorite.swift */; };
 		F4E76A882993E80300C16ADC /* FavoriteRepoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E76A872993E80300C16ADC /* FavoriteRepoService.swift */; };
 		F4E76A8A2993EC1C00C16ADC /* FavoriteRepoServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E76A892993EC1C00C16ADC /* FavoriteRepoServiceTests.swift */; };
+		FE4458D72E1151A3008EB622 /* InsetTextEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4458D62E1151A2008EB622 /* InsetTextEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +160,7 @@
 		F4E76A852993E57900C16ADC /* RepoFavorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoFavorite.swift; sourceTree = "<group>"; };
 		F4E76A872993E80300C16ADC /* FavoriteRepoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepoService.swift; sourceTree = "<group>"; };
 		F4E76A892993EC1C00C16ADC /* FavoriteRepoServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepoServiceTests.swift; sourceTree = "<group>"; };
+		FE4458D62E1151A2008EB622 /* InsetTextEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,6 +266,7 @@
 		F447A3882963B8C60056FDEF /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				FE4458D62E1151A2008EB622 /* InsetTextEditor.swift */,
 				F447A3892963B8D60056FDEF /* Loading.swift */,
 				F447A38D2963C2C00056FDEF /* ErrorAlert.swift */,
 				F4D6E50B296B739900C302C1 /* ClearButton.swift */,
@@ -666,6 +669,7 @@
 				F4B040A229665BF4007AD99C /* Date.swift in Sources */,
 				F4445AA3295E5C7F0053D9B0 /* BaseViewModel.swift in Sources */,
 				F422AD1F299456F4007A1B81 /* FavoritesView.swift in Sources */,
+				FE4458D72E1151A3008EB622 /* InsetTextEditor.swift in Sources */,
 				F4B0409429664485007AD99C /* CommitListView.swift in Sources */,
 				F4DD5157297A8DE100787B66 /* DiffViewModel.swift in Sources */,
 				F4E76A882993E80300C16ADC /* FavoriteRepoService.swift in Sources */,
@@ -880,7 +884,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = "Alpha 0.1.8";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hellmann.Jagu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -912,7 +916,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.6;
 				MARKETING_VERSION = "Alpha 0.1.8";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hellmann.Jagu;
 				PRODUCT_NAME = "$(TARGET_NAME)";

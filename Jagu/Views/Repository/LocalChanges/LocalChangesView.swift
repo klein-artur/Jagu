@@ -46,8 +46,10 @@ struct LocalChangesView: View {
             }
             if let status = viewModel.status, !status.stagedChanges.isEmpty || status.canContinue {
                 HStack{
-                    TextEditor(text: $viewModel.commitMessage)
-                        .frame(height: 50)
+                    InsetTextEditor(text: $viewModel.commitMessage)
+                        .verticalInset(8)
+                        .horizontalInset(8)
+                        .frame(height: 50.0)
                     Button {
                         viewModel.commit()
                     } label: {

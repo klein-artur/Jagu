@@ -13,9 +13,7 @@ class PreviewRepo: Repository {
     var repositoryUpdated = PassthroughSubject<Void, Never>()
 
     var listOfSubmodules: SubmoduleResult {
-        get async throws {
-            fatalError("Preview and Test Repo implementation used in productive code!")
-        }
+        return try! SubmoduleParser().parse(result: "").get()
     }
     func stage(files paths: [String]) async throws {
         fatalError("Preview and Test Repo implementation used in productive code!")
