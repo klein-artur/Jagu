@@ -50,6 +50,7 @@ struct LocalChangesView: View {
                         .verticalInset(8)
                         .horizontalInset(8)
                         .frame(height: 50.0)
+                        .cornerRadius(5.0)
                     Button {
                         viewModel.commit()
                     } label: {
