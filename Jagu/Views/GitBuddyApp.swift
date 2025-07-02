@@ -48,6 +48,15 @@ JaguApp: App {
                 )
             })
             .commitSheet(presented: $showCommitList)
+            .if(mainViewModel.repoName != nil) { view in
+                view.toolbar {
+                    ToolbarItem(placement: .principal) {
+                        Text(mainViewModel.repoName ?? "")
+                            .font(.headline)
+                            .lineLimit(1)
+                    }
+                }
+            }
         }
         .commands {
             CommandMenu("Actions") {
